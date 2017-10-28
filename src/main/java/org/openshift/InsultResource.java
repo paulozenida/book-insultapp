@@ -14,7 +14,7 @@ public class InsultResource {
 	@GET()
 	@Produces("application/json")
 	public Map<String,String> getInsult() {
-		final MMap<String, String> theInsult = new HashMap<String, String>(); 
+		final Map<String, String> theInsult = new HashMap<String, String>(); 
 		theInsult.put("insult", new InsultGenerator().generateInsult()); 
 		return theInsult;
 	}
